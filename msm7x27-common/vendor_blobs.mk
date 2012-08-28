@@ -53,7 +53,6 @@ PRODUCT_COPY_FILES += \
 
 ## Camera proprietaries
 PRODUCT_COPY_FILES += \
-    vendor/samsung/msm7x27-common/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
