@@ -16,8 +16,8 @@ include vendor/samsung/msm7x27-common/vendor.mk
 
 ## Camera proprietaries
 PRODUCT_COPY_FILES += \
-    vendor/samsung/tass/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so 
+    vendor/samsung/beni/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so 
   
 ## Sensor
 PRODUCT_COPY_FILES += \
-    vendor/samsung/tass/proprietary/lib/hw/sensors.beni.so:system/lib/hw/sensors.beni.so 
+    vendor/samsung/beni/proprietary/lib/hw/sensors.beni.so:system/lib/hw/sensors.beni.so 
