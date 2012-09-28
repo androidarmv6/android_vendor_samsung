@@ -92,9 +92,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/lib/hw/gps.msm7x27.so:system/lib/hw/gps.msm7x27.so \
     vendor/samsung/msm7x27-common/proprietary/bin/gpsd:system/bin/gpsd 
 
-## Lights
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm7x27-common/proprietary/lib/hw/lights.msm7x27.so:system/lib/hw/lights.msm7x27.so
 	
 ## GPU firmware and libraries
 PRODUCT_COPY_FILES += \
