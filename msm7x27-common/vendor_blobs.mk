@@ -50,16 +50,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so
-
-## Camera proprietaries
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm7x27-common/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so 
+ 
 
 ## Atheros AR6002 firmware
 PRODUCT_COPY_FILES += \

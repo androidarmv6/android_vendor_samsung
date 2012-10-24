@@ -14,9 +14,29 @@
 
 include vendor/samsung/msm7x27-common/vendor.mk
 
+# Prebuilt libraries that are needed to build open-source libraries
+PRODUCT_COPY_FILES += \
+    vendor/samsung/cooper/proprietary/lib/libseccameraadaptor.so:obj/lib/libseccameraadaptor.so \
+    vendor/samsung/cooper/proprietary/lib/libcamera.so:obj/lib/libcamera.so
+
 ## Camera proprietaries
 PRODUCT_COPY_FILES += \
-    vendor/samsung/cooper/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so 
+    vendor/samsung/cooper/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
+    vendor/samsung/cooper/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
+    vendor/samsung/cooper/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
+    vendor/samsung/cooper/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+    vendor/samsung/cooper/proprietary/lib/libActionShot.so:system/lib/libActionShot.so \
+    vendor/samsung/cooper/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
+    vendor/samsung/cooper/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
+    vendor/samsung/cooper/proprietary/lib/libcaps.so:system/lib/libcaps.so \
+    vendor/samsung/cooper/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
+    vendor/samsung/cooper/proprietary/lib/libPlusMe.so:system/lib/libPlusMe.so \
+    vendor/samsung/cooper/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
+    vendor/samsung/cooper/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
+    vendor/samsung/cooper/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/samsung/cooper/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/cooper/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
+    vendor/samsung/cooper/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so
   
 ## Sensor
 PRODUCT_COPY_FILES += \
