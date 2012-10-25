@@ -14,9 +14,29 @@
 
 include vendor/samsung/msm7x27-common/vendor.mk
 
+# Prebuilt libraries that are needed to build open-source libraries
+PRODUCT_COPY_FILES += \
+    vendor/samsung/beni/proprietary/lib/libseccameraadaptor.so:obj/lib/libseccameraadaptor.so \
+    vendor/samsung/beni/proprietary/lib/libcamera.so:obj/lib/libcamera.so
+
 ## Camera proprietaries
 PRODUCT_COPY_FILES += \
-    vendor/samsung/beni/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so 
+    vendor/samsung/beni/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
+    vendor/samsung/beni/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
+    vendor/samsung/beni/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
+    vendor/samsung/beni/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+    vendor/samsung/beni/proprietary/lib/libActionShot.so:system/lib/libActionShot.so \
+    vendor/samsung/beni/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
+    vendor/samsung/beni/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
+    vendor/samsung/beni/proprietary/lib/libcaps.so:system/lib/libcaps.so \
+    vendor/samsung/beni/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
+    vendor/samsung/beni/proprietary/lib/libPlusMe.so:system/lib/libPlusMe.so \
+    vendor/samsung/beni/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
+    vendor/samsung/beni/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
+    vendor/samsung/beni/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
+    vendor/samsung/beni/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/beni/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
+    vendor/samsung/beni/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so
   
 ## Sensor
 PRODUCT_COPY_FILES += \
