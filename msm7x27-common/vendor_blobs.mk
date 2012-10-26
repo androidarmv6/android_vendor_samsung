@@ -50,23 +50,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so
- 
 
 ## Atheros AR6002 firmware
 PRODUCT_COPY_FILES += \
-    vendor/samsung/msm7x27-common/proprietary/wifi/ar6000.ko:system/wifi/ar6000.ko \
-    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/athtcmd_ram.bin:system/wifi/ath6k/AR6003/hw2.0/athtcmd_ram.bin \
-    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77:system/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77 \
-    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin \
-    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01 \
-    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.02:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.02 \
-    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.03:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.03 \
-    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/data.patch.bin:system/wifi/ath6k/AR6003/hw2.0/data.patch.bin \
-    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/otp.bin.z77:system/wifi/ath6k/AR6003/hw2.0/otp.bin.z77 \
-    vendor/samsung/msm7x27-common/proprietary/bin/hostapd:system/bin/hostapd \
-    vendor/samsung/msm7x27-common/proprietary/bin/wlan_mac:system/bin/wlan_mac \
-    vendor/samsung/msm7x27-common/proprietary/bin/wlan_tool:system/bin/wlan_tool \
-    vendor/samsung/msm7x27-common/proprietary/bin/wmiconfig:system/bin/wmiconfig 
+    vendor/samsung/msm7x27-common/proprietary/bin/hostapd:system/bin/hostapd 
 
 ## Bluetooth
 PRODUCT_COPY_FILES += \
