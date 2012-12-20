@@ -63,8 +63,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/data.patch.bin:system/wifi/ath6k/AR6003/hw2.0/data.patch.bin \
     vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/otp.bin.z77:system/wifi/ath6k/AR6003/hw2.0/otp.bin.z77 \
     vendor/samsung/msm7x27-common/proprietary/bin/hostapd:system/bin/hostapd \
-    vendor/samsung/msm7x27-common/proprietary/bin/hostapd_cli:system/bin/hostapd_cli \
-    vendor/samsung/msm7x27-common/proprietary/bin/hostapd_wps:system/bin/hostapd_wps \
     vendor/samsung/msm7x27-common/proprietary/bin/wlan_mac:system/bin/wlan_mac \
     vendor/samsung/msm7x27-common/proprietary/bin/wlan_tool:system/bin/wlan_tool \
     vendor/samsung/msm7x27-common/proprietary/bin/wmiconfig:system/bin/wmiconfig
