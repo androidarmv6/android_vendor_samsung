@@ -79,7 +79,6 @@ PRODUCT_COPY_FILES += \
 
 ## GPS
 PRODUCT_COPY_FILES += \
-    vendor/samsung/msm7x27-common/proprietary/lib/hw/gps.msm7x27.so:system/lib/hw/gps.msm7x27.so \
     vendor/samsung/msm7x27-common/proprietary/bin/gpsd:system/bin/gpsd 
 
 ## Lights
