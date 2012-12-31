@@ -12,9 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/samsung/msm7x27-common/vendor.mk
-
-# Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
     vendor/samsung/tass/proprietary/lib/libseccameraadaptor.so:obj/lib/libseccameraadaptor.so \
     vendor/samsung/tass/proprietary/lib/libcamera.so:obj/lib/libcamera.so
@@ -40,4 +37,6 @@ PRODUCT_COPY_FILES += \
   
 ## Sensor
 PRODUCT_COPY_FILES += \
-    vendor/samsung/tass/proprietary/lib/hw/sensors.tass.so:system/lib/hw/sensors.tass.so 
+    vendor/samsung/tass/proprietary/lib/hw/sensors.tass.so:system/lib/hw/sensors.tass.so
+
+$(call inherit-product, vendor/samsung/msm7x27-common/vendor.mk)
