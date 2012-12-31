@@ -85,7 +85,14 @@ PRODUCT_COPY_FILES += \
 ## Lights
 PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/lib/hw/lights.msm7x27.so:system/lib/hw/lights.msm7x27.so
-	
+
 ## Sensor
 PRODUCT_COPY_FILES += \
-    vendor/samsung/msm7x27-common/proprietary/bin/memsicd:system/bin/memsicd 
+    vendor/samsung/msm7x27-common/proprietary/bin/memsicd:system/bin/memsicd
+
+## Ramdisk kernel modules
+## Note: we don't need to propagate the rfs modules for all targets
+PRODUCT_COPY_FILES += \
+    vendor/samsung/msm7x27-common/proprietary/lib/modules/fsr.ko:lib/modules/fsr.ko \
+    vendor/samsung/msm7x27-common/proprietary/lib/modules/fsr_stl.ko:lib/modules/fsr_stl.ko \
+    vendor/samsung/msm7x27-common/proprietary/lib/modules/sec_param.ko:lib/modules/sec_param.ko
