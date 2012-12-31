@@ -12,9 +12,8 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include vendor/samsung/msm7x27-common/vendor.mk
+$(call inherit-product, vendor/samsung/msm7x27-common/vendor.mk)
 
-# Prebuilt libraries that are needed to build open-source libraries
 PRODUCT_COPY_FILES += \
     vendor/samsung/beni/proprietary/lib/libseccameraadaptor.so:obj/lib/libseccameraadaptor.so \
     vendor/samsung/beni/proprietary/lib/libcamera.so:obj/lib/libcamera.so
@@ -40,4 +39,5 @@ PRODUCT_COPY_FILES += \
   
 ## Sensor
 PRODUCT_COPY_FILES += \
-    vendor/samsung/beni/proprietary/lib/hw/sensors.beni.so:system/lib/hw/sensors.beni.so 
+    vendor/samsung/beni/proprietary/lib/hw/sensors.beni.so:system/lib/hw/sensors.beni.so
+
