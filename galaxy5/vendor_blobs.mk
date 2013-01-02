@@ -25,12 +25,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so
 
-## Kernel modules
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxy5/proprietary/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
-    vendor/samsung/galaxy5/proprietary/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
-    vendor/samsung/galaxy5/proprietary/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
-
 ## OMX proprietaries
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxy5/proprietary/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so
