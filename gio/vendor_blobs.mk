@@ -12,10 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_COPY_FILES += \
-    vendor/samsung/gio/proprietary/lib/libseccameraadaptor.so:obj/lib/libseccameraadaptor.so \
-    vendor/samsung/gio/proprietary/lib/libcamera.so:obj/lib/libcamera.so
-
 ## Camera proprietaries
 PRODUCT_COPY_FILES += \
     vendor/samsung/gio/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
@@ -29,11 +25,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/gio/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
     vendor/samsung/gio/proprietary/lib/libPlusMe.so:system/lib/libPlusMe.so \
     vendor/samsung/gio/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
-    vendor/samsung/gio/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
-    vendor/samsung/gio/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-    vendor/samsung/gio/proprietary/lib/libcamera.so:system/lib/libcamera.so \
-    vendor/samsung/gio/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
-    vendor/samsung/gio/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so
+    vendor/samsung/gio/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so
   
 ## Sensor
 PRODUCT_COPY_FILES += \
