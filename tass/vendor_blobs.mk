@@ -12,31 +12,34 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+## Atheros WiFi - board data calibration
 PRODUCT_COPY_FILES += \
-    vendor/samsung/tass/proprietary/lib/libseccameraadaptor.so:obj/lib/libseccameraadaptor.so \
-    vendor/samsung/tass/proprietary/lib/libcamera.so:obj/lib/libcamera.so
+    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01 \
+    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.02:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.02 \
+    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.03:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.03 \
+    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin
 
-## Camera proprietaries
+## Bluetooth
 PRODUCT_COPY_FILES += \
-    vendor/samsung/tass/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
-    vendor/samsung/tass/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
-    vendor/samsung/tass/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
-    vendor/samsung/tass/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
-    vendor/samsung/tass/proprietary/lib/libActionShot.so:system/lib/libActionShot.so \
-    vendor/samsung/tass/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
-    vendor/samsung/tass/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
-    vendor/samsung/tass/proprietary/lib/libcaps.so:system/lib/libcaps.so \
-    vendor/samsung/tass/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
-    vendor/samsung/tass/proprietary/lib/libPlusMe.so:system/lib/libPlusMe.so \
-    vendor/samsung/tass/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
-    vendor/samsung/tass/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
-    vendor/samsung/tass/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-    vendor/samsung/tass/proprietary/lib/libcamera.so:system/lib/libcamera.so \
-    vendor/samsung/tass/proprietary/lib/libmmparser.so:system/lib/libmmparser.so \
-    vendor/samsung/tass/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so
-  
-## Sensor
+    vendor/samsung/msm7x27-common/proprietary/bin/BCM2049C0_003.001.031.0088.0094.hcd:system/etc/firmware/BCM2049C0_003.001.031.0088.0094.hcd
+
+## Camera
 PRODUCT_COPY_FILES += \
-    vendor/samsung/tass/proprietary/lib/hw/sensors.tass.so:system/lib/hw/sensors.tass.so
+    vendor/samsung/msm7x27-common/proprietary/lib/libActionShot.so:system/lib/libActionShot.so \
+    vendor/samsung/msm7x27-common/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
+    vendor/samsung/msm7x27-common/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/msm7x27-common/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
+    vendor/samsung/msm7x27-common/proprietary/lib/libcaps.so:system/lib/libcaps.so \
+    vendor/samsung/msm7x27-common/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
+    vendor/samsung/msm7x27-common/proprietary/lib/libPlusMe.so:system/lib/libPlusMe.so \
+    vendor/samsung/msm7x27-common/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
+    vendor/samsung/msm7x27-common/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
+    vendor/samsung/msm7x27-common/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
+    vendor/samsung/tass/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so
+
+## Sensors
+PRODUCT_COPY_FILES += \
+    vendor/samsung/tass/proprietary/lib/hw/sensors.tass.so:system/lib/hw/sensors.tass.so \
+    vendor/samsung/msm7x27-common/proprietary/bin/memsicd:system/bin/memsicd
 
 $(call inherit-product, vendor/samsung/msm7x27-common/vendor.mk)

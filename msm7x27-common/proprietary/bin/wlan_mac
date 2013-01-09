@@ -29,8 +29,8 @@ if ! ls /data/.nvmac.info; then
     echo `getprop ril.wifi_macaddr` > /data/.nvmac.info
 fi
 
-mv /data/log/ar6k.log /data/log/ar6k.previous.log
-recEvent --logfile=/data/log/ar6k.log --binary --reclimit=10000& 
+recEvent --logfile=/data/ar6k.log --binary --reclimit=10000&
+chmod 0664 /data/ar6k.log /data/ar6k.previous.log
 
 for i in 1 2 3 4 5 6 7 8 9 10; do
     if $WLAN_ENABLE_CHECK; then
@@ -46,5 +46,10 @@ else
     $SYSLOG "Setup bt off"
     wmiconfig -i $IFNAME --bt off
 fi
+
+for i in 1 2 3 4 5; do 
+$SYSLOG "sleep 1 sec..." 
+sleep 1 
+done 
 
 wmiconfig -i $IFNAME --wlan disable

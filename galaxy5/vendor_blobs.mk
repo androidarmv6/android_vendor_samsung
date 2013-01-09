@@ -12,31 +12,26 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-## Bluetooth proprietaries
+## Atheros WiFi - board data calibration
+PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxy5/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.04:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.04
+
+## Bluetooth
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxy5/proprietary/bin/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd:system/etc/firmware/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd
 
-## Camera proprietaries
+## Camera
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxy5/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libmmipl.so:system/lib/libmmipl.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libmmjpeg.so:system/lib/libmmjpeg.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libmmosal.so:system/lib/libmmosal.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libmmparser_divxdrmlib.so:system/lib/libmmparser_divxdrmlib.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libmmparser.so:system/lib/libmmparser.so
+    vendor/samsung/galaxy5/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so
 
-## Kernel modules
+## OMX
+PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxy5/proprietary/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so
+
+## Ramdisk kernel modules (note: galaxy5 requires different versions, as it uses Froyo bootloader)
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxy5/proprietary/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
     vendor/samsung/galaxy5/proprietary/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
     vendor/samsung/galaxy5/proprietary/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
-
-## OMX proprietaries
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxy5/proprietary/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so
-
-## Wifi firmware (board calibration only)
-PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxy5/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.04:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.04
 
 $(call inherit-product, vendor/samsung/msm7x27-common/vendor.mk)
