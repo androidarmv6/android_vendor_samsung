@@ -77,11 +77,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/lib/liba2dp.so:system/lib/liba2dp.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libaudioeq.so:system/lib/libaudioeq.so 
 
-## GPS
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm7x27-common/proprietary/lib/hw/gps.msm7x27.so:system/lib/hw/gps.msm7x27.so \
-    vendor/samsung/msm7x27-common/proprietary/bin/gpsd:system/bin/gpsd 
-
 ## Sensor
 PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/bin/memsicd:system/bin/memsicd
