@@ -67,9 +67,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
 
 ## RIL
+## Note: override with Beni versions for all targets; other versions don't display APN data correctly
 PRODUCT_COPY_FILES += \
-    vendor/samsung/msm7x27-common/proprietary/bin/qmuxd:system/bin/qmuxd \
-    vendor/samsung/msm7x27-common/proprietary/lib/libdiag.so:system/lib/libdiag.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so
+    vendor/samsung/beni/proprietary/bin/qmuxd:system/bin/qmuxd \
+    vendor/samsung/beni/proprietary/lib/libdiag.so:system/lib/libdiag.so \
+    vendor/samsung/beni/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    vendor/samsung/beni/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so
 
