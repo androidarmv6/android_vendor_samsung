@@ -23,6 +23,7 @@ PRODUCT_COPY_FILES += \
 ## Camera
 PRODUCT_COPY_FILES += \
     vendor/samsung/gio/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
+    vendor/samsung/gio/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libActionShot.so:system/lib/libActionShot.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libcamera.so:system/lib/libcamera.so \
