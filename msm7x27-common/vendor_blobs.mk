@@ -13,6 +13,23 @@
 # limitations under the License.
 
 ## Atheros WiFi
+ifeq ($(BOARD_WLAN_DEVICE),ath6kl_compat)
+## ath6kl loads firmware using kernel FW_LOADER driver & userspace init hotplug mapping - place in /system/etc/firmware
+PRODUCT_COPY_FILES += \
+    vendor/samsung/msm7x27-common/proprietary/etc/firmware/ath6k/AR6003/hw2.0/athtcmd_ram.bin:system/etc/firmware/ath6k/AR6003/hw2.0/athtcmd_ram.bin \
+    vendor/samsung/msm7x27-common/proprietary/etc/firmware/ath6k/AR6003/hw2.0/athwlan.bin.z77:system/etc/firmware/ath6k/AR6003/hw2.0/athwlan.bin.z77 \
+    vendor/samsung/msm7x27-common/proprietary/etc/firmware/ath6k/AR6003/hw2.0/data.patch.bin:system/etc/firmware/ath6k/AR6003/hw2.0/data.patch.bin \
+    vendor/samsung/msm7x27-common/proprietary/etc/firmware/ath6k/AR6003/hw2.0/otp.bin.z77:system/etc/firmware/ath6k/AR6003/hw2.0/otp.bin.z77
+
+## All non-Samsung ath6kl firmware yields poor performance in client/station mode; kvalo has suggested that Samsung firmware provides customer fixes not
+## present in other firmware. However, Samsung's older firmware is incompatible with ad-hoc mode in the new driver. Therefore, we use both types of
+## firmware depending on the required driver state for optimal stability.
+PRODUCT_COPY_FILES += \
+    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/athtcmd_ram.bin:system/etc/firmware/ath6k/AR6003/hw2.0/samsung_athtcmd_ram.bin \
+    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77:system/etc/firmware/ath6k/AR6003/hw2.0/samsung_athwlan.bin.z77 \
+    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/data.patch.bin:system/etc/firmware/ath6k/AR6003/hw2.0/samsung_data.patch.bin \
+    vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/otp.bin.z77:system/etc/firmware/ath6k/AR6003/hw2.0/samsung_otp.bin.z77
+else
 PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/bin/hostapd:system/bin/hostapd \
     vendor/samsung/msm7x27-common/proprietary/bin/wmiconfig:system/bin/wmiconfig \
@@ -21,6 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77:system/wifi/ath6k/AR6003/hw2.0/athwlan.bin.z77 \
     vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/data.patch.bin:system/wifi/ath6k/AR6003/hw2.0/data.patch.bin \
     vendor/samsung/msm7x27-common/proprietary/wifi/ath6k/AR6003/hw2.0/otp.bin.z77:system/wifi/ath6k/AR6003/hw2.0/otp.bin.z77
+endif
 
 ## Audio
 PRODUCT_COPY_FILES += \
@@ -61,10 +79,17 @@ PRODUCT_COPY_FILES += \
 
 ## Ramdisk kernel modules
 ## Note: we don't need to propagate the rfs modules for all targets
+ifdef BUILD_WITH_30X_KERNEL
+PRODUCT_COPY_FILES += \
+    vendor/samsung/msm7x27-common/proprietary/lib/modules-30x/fsr.ko:root/lib/modules/fsr.ko \
+    vendor/samsung/msm7x27-common/proprietary/lib/modules-30x/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
+    vendor/samsung/msm7x27-common/proprietary/lib/modules-30x/sec_param.ko:root/lib/modules/sec_param.ko
+else
 PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
     vendor/samsung/msm7x27-common/proprietary/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
     vendor/samsung/msm7x27-common/proprietary/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
+endif
 
 ## RIL
 ## Note: override with Beni versions for all targets; other versions don't display APN data correctly
