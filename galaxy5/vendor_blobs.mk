@@ -13,8 +13,13 @@
 # limitations under the License.
 
 ## Atheros WiFi - board data calibration
+ifeq ($(BOARD_WLAN_DEVICE),ath6kl_compat)
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxy5/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.04:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.04
+    vendor/samsung/galaxy5/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.bin
+else
+PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxy5/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin
+endif
 
 ## Bluetooth
 PRODUCT_COPY_FILES += \
@@ -29,9 +34,16 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxy5/proprietary/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so
 
 ## Ramdisk kernel modules (note: galaxy5 requires different versions, as it uses Froyo bootloader)
+ifdef BUILD_WITH_30X_KERNEL
+PRODUCT_COPY_FILES += \
+    vendor/samsung/galaxy5/proprietary/lib/modules-30x/fsr.ko:root/lib/modules/fsr.ko \
+    vendor/samsung/galaxy5/proprietary/lib/modules-30x/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
+    vendor/samsung/galaxy5/proprietary/lib/modules-30x/sec_param.ko:root/lib/modules/sec_param.ko
+else
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxy5/proprietary/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
     vendor/samsung/galaxy5/proprietary/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
     vendor/samsung/galaxy5/proprietary/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
+endif
 
 $(call inherit-product, vendor/samsung/msm7x27-common/vendor.mk)
