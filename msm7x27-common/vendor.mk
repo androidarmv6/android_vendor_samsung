@@ -12,5 +12,15 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Kernel 3.0 - supported devices
+ifneq ($(filter galaxy5,$(CM_BUILD)),)
+    BUILD_WITH_30X_KERNEL := true
+endif
+
+# ath6kl-compat driver - supported devices
+ifneq ($(filter galaxy5,$(CM_BUILD)),)
+    BOARD_WLAN_DEVICE := ath6kl_compat
+endif
+
 # Inherit proprietary blobs
 $(call inherit-product, vendor/samsung/msm7x27-common/vendor_blobs.mk)
