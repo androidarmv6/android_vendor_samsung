@@ -23,7 +23,7 @@ endif
 
 ## Bluetooth
 PRODUCT_COPY_FILES += \
-    vendor/samsung/galaxy5/proprietary/bin/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd:system/etc/firmware/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd
+    vendor/samsung/msm7x27-common/proprietary/bin/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd:system/etc/firmware/BCM2049B0_BCM20780B0_002.001.022.0170.0174.hcd
 
 ## Camera
 PRODUCT_COPY_FILES += \
