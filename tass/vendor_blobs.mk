@@ -15,10 +15,10 @@
 ## Atheros WiFi - board data calibration
 ifeq ($(BOARD_WLAN_DEVICE),ath6kl_compat)
 PRODUCT_COPY_FILES += \
-    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.bin.01 \
-    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.02:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.bin.02 \
-    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.03:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.bin.03 \
-    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.bin
+    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.SD31.bin.01 \
+    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.02:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.SD31.bin.02 \
+    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.03:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.SD31.bin.03 \
+    vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.SD31.bin
 else
 PRODUCT_COPY_FILES += \
     vendor/samsung/tass/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01 \
