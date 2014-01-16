@@ -33,6 +33,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/lib/libActionShot.so:system/lib/libActionShot.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/msm7x27-common/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libcaps.so:system/lib/libcaps.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
