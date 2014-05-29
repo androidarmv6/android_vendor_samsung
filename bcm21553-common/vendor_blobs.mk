@@ -38,6 +38,8 @@ PRODUCT_COPY_FILES += \
 
 # Common Offline charging stuff
 PRODUCT_COPY_FILES += \
+    vendor/samsung/bcm21553-common/proprietary/bin/charging_mode:system/bin/charging_mode \
+    vendor/samsung/bcm21553-common/proprietary/bin/playlpm:system/bin/playlpm \
     vendor/samsung/bcm21553-common/proprietary/lib/libqmage_bluesea.so:system/lib/libqmage_bluesea.so \
     vendor/samsung/bcm21553-common/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so
 

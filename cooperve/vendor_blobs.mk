@@ -31,8 +31,7 @@ $(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
 PRODUCT_COPY_FILES += \
     vendor/samsung/cooperve/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
     vendor/samsung/cooperve/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/samsung/bcm21553-common/proprietary/bin/memsicd:system/bin/memsicd \
-    vendor/samsung/cooperve/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so \
+    vendor/samsung/cooperve/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so
 
 # Offline 320 x 240 charging
 PRODUCT_COPY_FILES += \
@@ -58,8 +57,4 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/cooperve/proprietary/media/battery_charging_100.qmg:system/media/battery_charging_100.qmg \
     vendor/samsung/cooperve/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
     vendor/samsung/cooperve/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg \
-    vendor/samsung/cooperve/proprietary/media/TemperatureError.qmg:system/media/TemperatureError.qmg \
-    vendor/samsung/bcm21553-common/proprietary/bin/charging_mode:system/bin/charging_mode \
-    vendor/samsung/bcm21553-common/proprietary/bin/playlpm:system/bin/playlpm \
-    vendor/samsung/bcm21553-common/proprietary/lib/libqmage_bluesea.so:system/lib/libqmage_bluesea.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so
+    vendor/samsung/cooperve/proprietary/media/TemperatureError.qmg:system/media/TemperatureError.qmg
