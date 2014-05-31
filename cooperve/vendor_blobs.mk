@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
-
 # Camera
 #PRODUCT_COPY_FILES += \
 #    vendor/samsung/cooperve/proprietary/lib/libcamera.so:system/lib/libcamera.so \
@@ -58,3 +56,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/cooperve/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
     vendor/samsung/cooperve/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg \
     vendor/samsung/cooperve/proprietary/media/TemperatureError.qmg:system/media/TemperatureError.qmg
+
+$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)

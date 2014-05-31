@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
-
 # Camera
 PRODUCT_COPY_FILES += \
     vendor/samsung/tassve/proprietary/lib/libcamera.so:system/lib/libcamera.so
@@ -64,3 +62,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/tassve/proprietary/media/TemperatureError.qmg:system/media/TemperatureError.qmg \
     vendor/samsung/tassve/proprietary/bin/charging_mode:system/bin/charging_mode \
     vendor/samsung/tassve/proprietary/bin/playlpm:system/bin/playlpm
+
+$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)

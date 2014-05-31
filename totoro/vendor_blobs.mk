@@ -12,8 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
-
 # Camera
 PRODUCT_COPY_FILES += \
     vendor/samsung/totoro/proprietary/lib/libcamera.so:system/lib/libcamera.so \
@@ -82,3 +80,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/totoro/proprietary/bin/playlpm:system/bin/playlpm \
     vendor/samsung/totoro/proprietary/lib/libqmage_bluesea.so:system/lib/libqmage_bluesea.so \
     vendor/samsung/totoro/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so
+
+$(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)

@@ -13,19 +13,11 @@
 # limitations under the License.
 
 ## Atheros WiFi - board data calibration
-ifeq ($(BOARD_WLAN_DEVICE),ath6kl_compat)
 PRODUCT_COPY_FILES += \
     vendor/samsung/beni/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.SD31.bin.01 \
     vendor/samsung/beni/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.02:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.SD31.bin.02 \
     vendor/samsung/beni/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.03:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.SD31.bin.03 \
     vendor/samsung/beni/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin:system/etc/firmware/ath6k/AR6003/hw2.0/bdata.SD31.bin
-else
-PRODUCT_COPY_FILES += \
-    vendor/samsung/beni/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.01 \
-    vendor/samsung/beni/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.02:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.02 \
-    vendor/samsung/beni/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.03:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin.03 \
-    vendor/samsung/beni/proprietary/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin:system/wifi/ath6k/AR6003/hw2.0/bdata.SD31.bin
-endif
 
 ## Bluetooth
 PRODUCT_COPY_FILES += \
