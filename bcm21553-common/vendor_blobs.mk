@@ -67,13 +67,3 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/bin/memsicd:system/bin/memsicd
 
-# Modules
-PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/memalloc.ko:system/lib/modules/memalloc.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/gememalloc.ko:system/lib/modules/gememalloc.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/ge_drv.ko:system/lib/modules/ge_drv.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/h6270enc.ko:system/lib/modules/h6270enc.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/hx170dec.ko:system/lib/modules/hx170dec.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/bcm_headsetsw.ko:system/lib/modules/bcm_headsetsw.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/brcm_switch.ko:system/lib/modules/brcm_switch.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/dhd.ko:system/lib/modules/dhd.ko
