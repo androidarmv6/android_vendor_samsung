@@ -26,7 +26,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/bin/BCM4330B1_002.001.003.0634.0652.hcd:system/bin/BCM4330B1_002.001.003.0634.0652.hcd
+    vendor/samsung/bcm21553-common/proprietary/etc/firmware/BCM4330B1_002.001.003.0634.0652.hcd:system/etc/firmware/BCM4330B1_002.001.003.0634.0652.hcd
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -45,10 +45,10 @@ PRODUCT_COPY_FILES += \
 
 # WIFI
 PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/etc/wifi/bcm4330_aps.bin:system/etc/wifi/bcm4330_aps.bin \
-    vendor/samsung/bcm21553-common/proprietary/etc/wifi/bcm4330_sta.bin:system/etc/wifi/bcm4330_sta.bin \
-    vendor/samsung/bcm21553-common/proprietary/etc/wifi/nvram.txt:system/etc/wifi/nvram.txt \
-    vendor/samsung/bcm21553-common/proprietary/etc/wifi/RC_248_WPA.bin:system/etc/wifi/RC_248_WPA.bin \
+    vendor/samsung/bcm21553-common/proprietary/etc/firmware/bcm4330_aps.bin:system/etc/firmware/bcm4330_aps.bin \
+    vendor/samsung/bcm21553-common/proprietary/etc/firmware/bcm4330_sta.bin:system/etc/firmware/bcm4330_sta.bin \
+    vendor/samsung/bcm21553-common/proprietary/etc/firmware/nvram.txt:system/etc/firmware/nvram.txt \
+    vendor/samsung/bcm21553-common/proprietary/etc/firmware/RC_248_WPA.bin:system/etc/firmware/RC_248_WPA.bin \
     vendor/samsung/bcm21553-common/proprietary/bin/wlandutservice:system/bin/wlandutservice
 
 # Lights
