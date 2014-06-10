@@ -36,21 +36,6 @@ PRODUCT_COPY_FILES += \
 #    vendor/samsung/totoro/proprietary/lib/libaccelcal.so:system/lib/libaccelcal.so \
 #    vendor/samsung/totoro/proprietary/lib/libdhwr.so:system/lib/libdhwr.so
 
-# Kernel Modules
-PRODUCT_COPY_FILES += \
-    vendor/samsung/totoro/proprietary/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
-    vendor/samsung/totoro/proprietary/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
-    vendor/samsung/totoro/proprietary/lib/modules/j4fs.ko:root/lib/modules/j4fs.ko \
-    vendor/samsung/totoro/proprietary/lib/modules/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
-    vendor/samsung/totoro/proprietary/lib/modules/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
-    vendor/samsung/totoro/proprietary/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko \
-    vendor/samsung/totoro/proprietary/lib/modules/fsr.ko:recovery/root/lib/modules/fsr.ko \
-    vendor/samsung/totoro/proprietary/lib/modules/fsr_stl.ko:recovery/root/lib/modules/fsr_stl.ko \
-    vendor/samsung/totoro/proprietary/lib/modules/j4fs.ko:recovery/root/lib/modules/j4fs.ko \
-    vendor/samsung/totoro/proprietary/lib/modules/rfs_fat.ko:recovery/root/lib/modules/rfs_fat.ko \
-    vendor/samsung/totoro/proprietary/lib/modules/rfs_glue.ko:recovery/root/lib/modules/rfs_glue.ko \
-    vendor/samsung/totoro/proprietary/lib/modules/sec_param.ko:recovery/root/lib/modules/sec_param.ko
-
 # Offline 320 x 240 charging
 PRODUCT_COPY_FILES += \
     vendor/samsung/totoro/proprietary/media/battery_charging_5.qmg:system/media/battery_charging_5.qmg \
