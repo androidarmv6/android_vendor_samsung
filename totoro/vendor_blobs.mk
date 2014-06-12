@@ -61,9 +61,5 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/totoro/proprietary/media/chargingwarning.qmg:system/media/chargingwarning.qmg \
     vendor/samsung/totoro/proprietary/media/Disconnected.qmg:system/media/Disconnected.qmg \
     vendor/samsung/totoro/proprietary/media/TemperatureError.qmg:system/media/TemperatureError.qmg \
-    vendor/samsung/totoro/proprietary/bin/charging_mode:system/bin/charging_mode \
-    vendor/samsung/totoro/proprietary/bin/playlpm:system/bin/playlpm \
-    vendor/samsung/totoro/proprietary/lib/libqmage_bluesea.so:system/lib/libqmage_bluesea.so \
-    vendor/samsung/totoro/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so
 
 $(call inherit-product, vendor/samsung/bcm21553-common/vendor.mk)
