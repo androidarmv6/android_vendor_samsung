@@ -28,8 +28,7 @@
 # Sensors
 PRODUCT_COPY_FILES += \
     vendor/samsung/cooperve/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
-    vendor/samsung/cooperve/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/samsung/cooperve/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so
+    vendor/samsung/cooperve/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
 
 # Offline 320 x 240 charging
 PRODUCT_COPY_FILES += \

@@ -66,10 +66,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/etc/firmware/RC_248_WPA.bin:system/etc/firmware/RC_248_WPA.bin \
     vendor/samsung/bcm21553-common/proprietary/bin/wlandutservice:system/bin/wlandutservice
 
-# Lights
-PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/lib/hw/lights.bcm21553.so:system/lib/hw/lights.bcm21553.so
-
 # RIL
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/lib/libril.so:system/lib/libril.so \
