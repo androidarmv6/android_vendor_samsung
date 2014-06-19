@@ -51,13 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/etc/gps/glconfig4751.xml:system/etc/gps/glconfig4751.xml \
     vendor/samsung/bcm21553-common/proprietary/lib/hw/gps.bcm21553.so:system/lib/hw/gps.bcm21553.so
 
-# Common Offline charging stuff
-PRODUCT_COPY_FILES += \
-    vendor/samsung/bcm21553-common/proprietary/bin/charging_mode:system/bin/charging_mode \
-    vendor/samsung/bcm21553-common/proprietary/bin/playlpm:system/bin/playlpm \
-    vendor/samsung/bcm21553-common/proprietary/lib/libqmage_bluesea.so:system/lib/libqmage_bluesea.so \
-    vendor/samsung/bcm21553-common/proprietary/lib/libQmageDecoder.so:system/lib/libQmageDecoder.so
-
 # WIFI
 PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/etc/firmware/bcm4330_aps.bin:system/etc/firmware/bcm4330_aps.bin \
