@@ -27,8 +27,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    vendor/samsung/totoro/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so \
-    vendor/samsung/totoro/proprietary/lib/hw/sensors.goldfish.so:system/lib/hw/sensors.goldfish.so \
+    vendor/samsung/totoro/proprietary/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so
 #    vendor/samsung/totoro/proprietary/lib/hw/acoustics.default.so:system/lib/hw/acoustics.default.so \
 #    vendor/samsung/totoro/proprietary/lib/libaccsensorcal.so:system/lib/libaccsensorcal.so \
 #    vendor/samsung/totoro/proprietary/lib/libaccsensorcaltest.so:system/lib/libaccsensorcaltest.so \
