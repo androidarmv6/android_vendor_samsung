@@ -17,14 +17,10 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/j4fs.ko:root/lib/modules/j4fs.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_fat.ko:root/lib/modules/rfs_fat.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_glue.ko:root/lib/modules/rfs_glue.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr.ko:recovery/root/lib/modules/fsr.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/fsr_stl.ko:recovery/root/lib/modules/fsr_stl.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/j4fs.ko:recovery/root/lib/modules/j4fs.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_fat.ko:recovery/root/lib/modules/rfs_fat.ko \
-    vendor/samsung/bcm21553-common/proprietary/lib/modules/rfs_glue.ko:recovery/root/lib/modules/rfs_glue.ko \
     vendor/samsung/bcm21553-common/proprietary/lib/modules/sec_param.ko:recovery/root/lib/modules/sec_param.ko
 
 # Encoding / decoding (not working)
