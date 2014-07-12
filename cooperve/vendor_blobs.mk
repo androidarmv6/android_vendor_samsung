@@ -13,17 +13,16 @@
 # limitations under the License.
 
 # Camera
-#PRODUCT_COPY_FILES += \
-#    vendor/samsung/cooperve/proprietary/lib/libcamera.so:system/lib/libcamera.so \
-#    vendor/samsung/cooperve/proprietary/lib/libbrcmjpeg.so:system/lib/libbrcmjpeg.so \
-#    vendor/samsung/cooperve/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
-#    vendor/samsung/cooperve/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
-#    vendor/samsung/cooperve/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
-#    vendor/samsung/cooperve/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
-#    vendor/samsung/cooperve/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
-#    vendor/samsung/cooperve/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
-#    vendor/samsung/cooperve/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
-#    vendor/samsung/cooperve/proprietary/lib/libcaps.so:system/lib/libcaps.so
+PRODUCT_COPY_FILES += \
+    vendor/samsung/cooperve/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
+    vendor/samsung/cooperve/proprietary/lib/libbrcmjpeg.so:system/lib/libbrcmjpeg.so \
+    vendor/samsung/cooperve/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
+    vendor/samsung/cooperve/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/cooperve/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
+    vendor/samsung/cooperve/proprietary/lib/libcaps.so:system/lib/libcaps.so \
+    vendor/samsung/cooperve/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
+    vendor/samsung/cooperve/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
+    vendor/samsung/cooperve/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so
 
 # Sensors
 PRODUCT_COPY_FILES += \

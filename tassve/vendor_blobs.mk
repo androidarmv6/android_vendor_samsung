@@ -14,7 +14,14 @@
 
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/samsung/tassve/proprietary/lib/libcamera.so:system/lib/libcamera.so
+    vendor/samsung/tassve/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
+    vendor/samsung/tassve/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
+    vendor/samsung/tassve/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/tassve/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
+    vendor/samsung/tassve/proprietary/lib/libcaps.so:system/lib/libcaps.so \
+    vendor/samsung/tassve/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
+    vendor/samsung/tassve/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
+    vendor/samsung/tassve/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so
 
 # Sensors
 PRODUCT_COPY_FILES += \

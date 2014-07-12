@@ -14,16 +14,15 @@
 
 # Camera
 PRODUCT_COPY_FILES += \
-    vendor/samsung/totoro/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/totoro/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
     vendor/samsung/totoro/proprietary/lib/libbrcmjpeg.so:system/lib/libbrcmjpeg.so \
-#    vendor/samsung/totoro/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
-#    vendor/samsung/totoro/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
-#    vendor/samsung/totoro/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
-#    vendor/samsung/totoro/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
-#    vendor/samsung/totoro/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
-#    vendor/samsung/totoro/proprietary/lib/libcamera_client.so:system/lib/libcamera_client.so \
-#    vendor/samsung/totoro/proprietary/lib/libcameraservice.so:system/lib/libcameraservice.so \
-#    vendor/samsung/totoro/proprietary/lib/libcaps.so:system/lib/libcaps.so
+    vendor/samsung/totoro/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
+    vendor/samsung/totoro/proprietary/lib/libcamera.so:system/lib/libcamera.so \
+    vendor/samsung/totoro/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
+    vendor/samsung/totoro/proprietary/lib/libcaps.so:system/lib/libcaps.so \
+    vendor/samsung/totoro/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
+    vendor/samsung/totoro/proprietary/lib/libseccamera.so:system/lib/libseccamera.so \
+    vendor/samsung/totoro/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so
 
 # Sensors
 PRODUCT_COPY_FILES += \
