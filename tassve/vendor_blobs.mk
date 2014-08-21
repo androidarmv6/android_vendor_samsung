@@ -14,6 +14,7 @@
 
 # Camera
 PRODUCT_COPY_FILES += \
+    vendor/samsung/tassve/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/tassve/proprietary/lib/libcamera.so:system/lib/libcamera.so
 
 # Sensors
