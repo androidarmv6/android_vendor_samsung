@@ -27,7 +27,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/samsung/beni/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libcamera.so:system/lib/libcamera.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so
 
