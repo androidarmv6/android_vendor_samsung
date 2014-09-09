@@ -29,6 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxy5/proprietary/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so
 
 ## Ramdisk kernel modules (note: galaxy5 requires different versions, as it uses Froyo bootloader)
+ifdef BUILD_USES_FSR_DRIVER
 ifdef BUILD_WITH_30X_KERNEL
 # modules built from partial source (warning: fsr_stl.ko is hacked together using older proprietary blobs)
 PRODUCT_COPY_FILES += \
@@ -41,6 +42,7 @@ else
 PRODUCT_COPY_FILES += \
     vendor/samsung/galaxy5/proprietary/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
     vendor/samsung/galaxy5/proprietary/lib/modules/sec_param.ko:root/lib/modules/sec_param.ko
+endif
 endif
 
 $(call inherit-product, vendor/samsung/msm7x27-common/vendor.mk)
