@@ -24,17 +24,9 @@ PRODUCT_COPY_FILES += \
 ## Camera
 PRODUCT_COPY_FILES += \
     vendor/samsung/cooper/proprietary/lib/liboemcamera.so:system/lib/liboemcamera.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libActionShot.so:system/lib/libActionShot.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libarccamera.so:system/lib/libarccamera.so \
     vendor/samsung/msm7x27-common/proprietary/lib/libcamera.so:obj/lib/libcamera.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libcamera.so:system/lib/libcamera.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libCaMotion.so:system/lib/libCaMotion.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libcaps.so:system/lib/libcaps.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libPanoraMax1.so:system/lib/libPanoraMax1.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libPlusMe.so:system/lib/libPlusMe.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libseccameraadaptor.so:system/lib/libseccameraadaptor.so \
-    vendor/samsung/msm7x27-common/proprietary/lib/libseccamera.so:system/lib/libseccamera.so
+    vendor/samsung/msm7x27-common/proprietary/lib/libs3cjpeg.so:system/lib/libs3cjpeg.so
 
 ## Sensors
 PRODUCT_COPY_FILES += \
