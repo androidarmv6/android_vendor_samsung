@@ -67,12 +67,7 @@ PRODUCT_COPY_FILES += \
 
 ## Ramdisk kernel modules
 ## Note: we don't need to propagate the rfs modules for all targets
-ifdef BUILD_WITH_30X_KERNEL
-PRODUCT_COPY_FILES += \
-    vendor/samsung/msm7x27-common/proprietary/lib/modules-30x/fsr.ko:root/lib/modules/fsr.ko \
-    vendor/samsung/msm7x27-common/proprietary/lib/modules-30x/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
-    vendor/samsung/msm7x27-common/proprietary/lib/modules-30x/sec_param.ko:root/lib/modules/sec_param.ko
-else
+ifndef BUILD_WITH_30X_KERNEL
 PRODUCT_COPY_FILES += \
     vendor/samsung/msm7x27-common/proprietary/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
     vendor/samsung/msm7x27-common/proprietary/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
