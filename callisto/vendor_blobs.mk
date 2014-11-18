@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES += \
 ## Ramdisk kernel modules
 ## Note: callisto uses its own modules due to its FSR partition layout differing from
 ##       the other devices with a Gingerbread bootloader
-ifndef BUILD_WITH_30X_KERNEL
+ifneq ($(BUILD_WITH_30X_KERNEL),true)
 PRODUCT_COPY_FILES += \
     vendor/samsung/callisto/proprietary/lib/modules/fsr.ko:root/lib/modules/fsr.ko \
     vendor/samsung/callisto/proprietary/lib/modules/fsr_stl.ko:root/lib/modules/fsr_stl.ko \
