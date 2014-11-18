@@ -29,7 +29,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/galaxy5/proprietary/lib/libOmxVidEnc.so:system/lib/libOmxVidEnc.so
 
 ## Ramdisk kernel modules (note: galaxy5 requires different versions, as it uses Froyo bootloader)
-ifndef BUILD_WITH_30X_KERNEL
+ifneq ($(BUILD_WITH_30X_KERNEL),true)
 # fsr.ko is hex-edited; msm_shared_ram_phys is 0x300000 for gingerbread bootloaders but still 0x100000 for galaxy5
 # sec_param is built from source (gingerbread prebuilt use bml8 for param on other devices, galaxy5 uses bml9)
 PRODUCT_COPY_FILES += \
